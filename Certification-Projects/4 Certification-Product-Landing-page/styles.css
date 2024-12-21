@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+   background-color: #fdf6ff;
+   font-size: 18px;
+}
+
+#header {
+       display: grid;
+       grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+       justify-content: space-between;
+       position: fixed;
+       top: 0;   
+       left: 0;   
+      background-color: white;
+       width: 100%;
+       border-bottom: 1px solid #b4b4b4;
+       
+}
+
+
+#header-img {
+       width: 200px;
+       height: 120px;
+}
+
+
+main {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+
+  
+}
+
+
+#category {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            
+}
+
+
+
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+       
+
+li > a {
+          text-decoration: none; 
+          font-size: 25px;
+          color: black;
+          font-family: Helvetica;
+          
+}
+
+#handmade {
+  text-align: center;
+}
+
+
+#range {
+         display: flex;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         margin-top: 30px;
+         margin-bottom: 30px;
+         
+}
+
+.range1, .range2, .range3 {
+           border: 1px solid #b4b4b4;
+           padding-left: 15px;
+           padding-right: 15px;
+           font-size: 20px;
+         }
+        
+        label {
+                display: block;
+                text-align: center;
+                font-size: 22px;
+                font-weight: bold;
+        }
+
+        input {          
+          display:block;           
+          margin: auto;
+        }
+
+        #submit, #email {
+           margin-top: 20px;  
+        }
+
+        #email {
+padding: 10px 90px;
+        font-size: 18px;
+        }
+
+        #submit {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px 50px;
+        margin-bottom: 25px;
+
+}
+
+@media only screen and (max-width: 500px) {
+   #header {
+     grid-template-columns: minmax(min-content, 1fr);
+   }
+   .range1, .range2, .range3 {
+     background-color: #f1e4bb;
+   }
+   
+}
+
+@media only screen and (max-width: 500px) and (min-width: 10px) {
+main {
+     
+     margin-top: 260px;
+   }
+}
+

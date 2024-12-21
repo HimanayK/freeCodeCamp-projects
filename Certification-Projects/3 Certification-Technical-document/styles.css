@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+         font-family: sans-serif;
+  }
+  
+  #navbar header {
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .img {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-right: 50px;
+  }
+  
+  .img img {
+            max-width:100%;
+            min-width: 300px;
+  }
+  
+  #main-doc {
+    display: block;
+    Margin: 15px auto 10px 0;
+    
+  }
+  
+  #navbar { 
+         position: fixed;
+            top: 0;
+            left: 0;
+            border-right-style: solid;
+            border-color: #b3ad9d;
+            border-width: 2px;
+            
+            
+           
+         
+  }
+  
+  nav > ul {
+            
+            margin: 0;
+            padding: 0;
+            height: 500px;
+           width: 300px;
+      overflow-y: auto;
+            /*background-color: #dbdde6;*/
+            
+            
+  }
+  
+  nav > ul > li {
+             list-style-type: none;
+             padding: 30px;
+             border: 0.5px solid #b3ad9d;
+             border-left-style: hidden;
+             border-right-style: hidden;
+  }
+  
+  li > a {
+         text-decoration: none;
+         color: black;
+         font-size: 25px;
+  }
+  
+  .main-section {
+                margin-left: 315px;
+                margin-right: 18px;
+                font-size: 16px;
+                margin-bottom: 40px;
+                margin-top: 23px;
+                text-align: justify;
+  }
+  
+  .main-section header {
+          font-size: 25px; 
+          font-weight: bold; 
+           
+  }
+  
+  .main-section code pre {
+            background-color: #fcf0f0;     
+  }
+  
+  
+  
+  
+  
+  @media(max-width: 768px) {
+    #main-doc {
+                width: 600px;
+    }
+    .main-section code pre {
+            background-color: #eae7ff;     
+  }
+  #navbar { 
+    position: static;
+  }
+  
+  nav > ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            height: 500px;
+      overflow-y: auto;
+      background-color: #dbdde6;  
+  }
+  .main-section {
+                margin-left: 10px;
+                margin-right: 10px;
+  }
+  
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<title>newCoder Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+    <head>
+      <body>
+         <h1 id="title">newCoder Survey Form</h1>
+<p id="description"><i>Please share with us what you feel about our newCoder's bootcamp</i></p>
+<div class="container">
+<form id="survey-form" method="post" action="https://survey-form.newcoders.org">
+
+
+<!-- text-input and select-dropdown -->
+<fieldset> 
+  <label id="name-label" for="name">Name <input id="name" name="full-name" placeholder="Enter your name" type="text" required /></label>
+<label id="email-label" for="email">Email <input id="email" name="email" placeholder="Enter your email" type="email" required /></label>
+<label id="number-label" for="number">Age (optional) <input id="number" name="age" placeholder="Age" type="number" min="13" max="60" /></label>
+  
+    <label for="rating">How would you rate your coding bootcamp experience overall? 
+    <select id="dropdown" name="rating">
+      <option value="0">(Select one)</option>
+      <option value="1">5-Outstanding</option>
+      <option value="2">4-Very Good/Very Satisfactory</option>
+      <option value="3">3-Good/Adequate</option>
+      <option value="4">2-Fair/Satisfactory</option>
+      <option value="5">1-Poor/Unsatisfactory</option>
+      </select>
+      </label>
+    </fieldset>
+
+
+<!-- radio input -->
+    <fieldset> 
+  <legend class="legend">Do you feel like you gained enough knowledge through the training?</legend>
+  <label for="agree"><input class="inline" id="agree" type="radio" name="opinion" value="agree" checked> Agree</label>
+  <label for="neutral"><input class="inline" id="neutral" type="radio" name="opinion" value="neutral" checked> Neutral</label>
+  <label for="disagree"><input class="inline" id="disagree" type="radio" name="opinion" value="disagree" checked> Disagree</label>
+  </fieldset>
+
+
+<!-- checkbox input -->
+      <fieldset> 
+     <legend class="legend">How do you prefer to receive training materials? (Select all that apply)</legend>
+     <label for="digital-copies"><input class="inline1" id="digital-copies" type="checkbox" name="training-medium" value="digital-copies" checked> Digital copies (e.g. PDFs, ebooks)</label>
+<label for="videos"><input class="inline1" id="videos" type="checkbox" name="training-medium" value="videos"> Videos</label>
+<label for="audios"><input class="inline1" id="audios" type="checkbox" name="training-medium" value="audios"> Audio recordings</label>
+    </fieldset>
+
+
+<!-- select-dropdown and textarea -->
+    <fieldset> 
+    <label for="feautures">What part(s) of your coding bootcamp have you found most useful in your role so far? <select id="features" name="feature">
+      <option value="0">(Select one)</option>
+      <option value="1">Self-paced</option>
+      <option value="2">Proejcts</option>
+      <option value="3">Community</option>
+      </select>
+      </label> 
+      <label for="suggestion">What improvements do you suggest to make the training programs more effective? <textarea id="suggestion" name="suggestion" rows="4" cols="30" placeholder="The suggestion should be a multi line text input. ">
+        </textarea>
+        </label>
+      </fieldset>
+
+      <!-- submit-input -->
+<input id="submit" type="submit" value="Submit" />
+</form>
+</div>
+</body>
+  </html>
+  

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Technical Document Page - CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+
+
+    <body>
+   <main id="main-doc">
+<div class="navbar-div">
+    <nav id="navbar">
+<header>CSS Document</header>
+    <ul>
+<li><a class="nav-link" href="#CSS_Introduction">CSS Introduction</a></li>
+<li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+<li><a class="nav-link" href="#CSS_Comments">CSS Comments</a></li>
+<li><a class="nav-link" href="#CSS_Borders">CSS Borders</a></li>
+<li><a class="nav-link" href="#CSS_Colors">CSS Colors</a></li>
+<li><a class="nav-link" href="#CSS_z-index_Property">CSS z-index Property</a></li>
+<li><a class="nav-link" href="#Reference">Reference</a></li>
+   </ul>
+      </nav>
+      </div>
+  
+  <div class="main-section-div">
+   <section class="main-section" id="CSS_Introduction">
+  <header>CSS Introduction</header>
+  <p>CSS (Cascading Style Sheets) is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to HTML documents. It describes how a webpage should look. It prescribes colors, fonts, spacing, etc. In short, you can make your website look however you want. CSS lets developers and designers define how it behaves, including how elements are positioned in the browser.</p>
+  <p>
+     <p>HTML uses tags and CSS uses rulesets. CSS styles are applied to the HTML element using selectors. CSS is easy to learn and understand, but it provides powerful control over the presentation of an HTML document.</p>
+     <h3>Why CSS?</h3>
+     <ul>
+        <li><b>CSS saves time:</b> You can write CSS once and reuse the same sheet in multiple HTML pages.</li>
+        <li><b>Easy Maintenance:</b> To make a global change simply change the style, and all elements in all the webpages will be updated automatically.</li>
+        <li><b>Search Engines:</b> CSS is considered a clean coding technique, which means search engines won’t have to struggle to “read” its content.</li>
+        <li><b>Superior styles to HTML:</b> CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</li>
+        </ul>
+</section>
+
+<section class="main-section" id="CSS_Syntax">
+   <header>CSS Syntax</header>
+   <p>A CSS Syntax rule consists of a selector, property, and its value. The selector points to the HTML element where the CSS style is to be applied. The CSS property is separated by semicolons. It is a combination of the selector name followed by the property: value pair that is defined for the specific selector.</p>
+<p>Syntax</p>
+   <code>selector { Property: value; }</code>
+   <p>For instance, we have declared a heading tag (h1) along with having assigned some property: value pair that is used to style the heading tag. Here, h1 is the selector, { color: green; font-family: sans-serif; } is a declaration block and it can contain one or more declarations separated by semicolons, color: green; is a property: value pair that is applied to the HTML element to style them.</p>
+   <div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240204013521/CSS-Syntax.webp" alt="syntax example" /> </div>
+   <p>Every declaration has a CSS property name and a value, separated by a colon(:) and is surrounded by curly braces({ }). For declaring the multiple CSS properties, it can be separated by the semicolon(;).</p>
+   <p>Let’s define each of these:</p>
+   <ul>
+      <li><b>Declaration:</b> A combination of a property and its corresponding value.</li>
+      <li><b>Selector:</b> Used to target and select specific HTML elements to apply styles to.</li>
+      <li><b>Property:</b> Defines the specific aspect or characteristic of an element that you want to modify.</li>
+      <li><b>Value:</b> Assigned setting or parameter for a given property, determining how the selected element should appear or behave.</li>
+      </ul>
+   <p>Example: This example illustrates the use of CSS Syntax for the styling of HTML elements.</p>
+   <code><pre>
+        h1 {
+            color: green;
+            text-align: center;
+        }
+        </pre></code>
+   <p><b>Output:</b> In the above code, h1 is the selector of h1 tags, it select the h1 element that you want to style. The color is a property and green is the value of that property, similar text-align is the property and value of that property is center.</p> 
+</section>
+
+<section class="main-section" id="CSS_Comments">
+   <header>CSS Comments</header>
+   <p>The Comments in CSS, are the statements in your code that are ignored by the compiler and are not executed. Comments are used to explain the code. They make the program more readable and understandable.</p>
+   <p>Syntax</p>
+   <code><pre>/* content */</pre></code>
+   <p>Comments can be single-line or multi-line. The /* */ comment syntax can be used for both single and multiline comments. We may use <!– –> syntax for hiding in CSS for older browsers, but this is no longer recommended for use. Adding comments to the code is a good practice that can help to understand the code if someone reads the code or if it is reviewed later.</p>
+   <p><i><b>Note:</b></i> The outputs are the same because comments are ignored by the browser and are not interpreted.</p>
+   <p>Supported Browsers:</p>
+   <ul>
+      <li>Google Chrome</li>
+      <li>Internet Explorer</li>
+      <li>Microsoft Edge</li>
+      <li>Firefox</li>
+      <li>Safari</li>
+      <li>Safari</li>
+   </ul>
+</section>
+
+<section class="main-section" id="CSS_Borders">
+   <header>CSS Borders</header>
+   <p>CSS Borders refer to the lines that surround elements, defining their edges. Borders can be styled, colored, and sized using CSS properties such as border-style, border-color, border-width, and border-radius.</p>
+   <p><i><b>Note:</b></i> Different properties can be set for all the different borders i.e.top border, right border, bottom border, and left border. </p>
+   <p>CSS border property:</p>
+      <ol>
+      <li> Border Style</li>
+      <ul>
+        <li>CSS border-top style Property</li>
+         <li>border-right-style Property</li>
+         <li>border-bottom-style Property</li>
+         <li>border-left-style Property</li>
+         </ul>
+         <p>Following are the types of borders:</p>
+             <ul>
+         <li>dotted – It describes a dotted border</li>
+         <li>dashed – It describes a dashed border</li>
+         <li>solid – It describes a solid border</li>
+         <li>double – It describes a double border</li>
+         <li>groove – It describes a 3D grooved border</li>
+         <li>ridge – It describes a 3D ridged border</li>
+         <li>inset – It describes a 3D inset border</li>
+         <li>outset – It describes a 3D outset border</li>
+         <li>none – It describes no border</li>
+        <li>hidden – It describes the hidden border</li>
+         </ul>
+         <p>Example</p>
+         <code><pre> selector {
+            border-style: dotted;
+        }</pre></code>
+<br><br>
+      <li>Border Width</li>
+      <ul>
+         <li>border-top-width Property</li>
+         <li>border-right-width Property</li>
+         <li>border-bottom-width Property</li>
+         <li>border-left-width Property</li>
+         </ul>
+         <p>Example<p>
+            <code><pre> selector {
+            border-style: solid;
+            border-width: 8px;
+        }</code></pre>
+         <br><br>
+      <li>Border Color</li>
+      <ul>
+         <li>border-top-color Property</li>
+         <li>border-right-color Property</li>
+         <li>border-bottom-color Property</li>
+         <li>border-left-color Property</li>
+         </ul>
+         <p>Example</p>
+         <code><pre> selector {
+            border-style: solid;
+            border-color: red
+        }</pre></code>
+         <br><br>
+      <li>Border individual sides</li>
+      <p>Syntax</p>
+      <code><pre>border-top-style : dotted;
+border-bottom-width: thick;
+border-right-color: green;
+etc</pre></code>
+         <br><br>
+      <li>Border radius property</li>
+       <p>Syntax</p>
+      <code><pre>border-radius: value;</pre></code>
+   </ol>
+</section>
+
+<section class="main-section" id="CSS_Colors">
+   <header id="CSS-Colors">CSS Colors</header>
+   <p>CSS Color property is used to set the color of HTML elements. This property is used to set font color, background color, etc. The color of an element can be defined in the following ways:</p>
+   <ul>
+      <li>Built-In Color</li>
+       <p>Syntax</p>
+   <code><pre> selector {
+    color: color-name;
+}</pre></code>
+      <li>RGB Format</li>
+      <p>Syntax</p>
+   <code><pre> selector {
+    color: rgb(R, G, B);
+}
+</pre></code>
+           <li>RGBA Format</li>
+           <p>Syntax</p>
+   <code><pre> selector {
+    color:rgba(R, G, B, A);
+}</pre></code>
+      <li>Hexadecimal Notation</li>
+      <p>Syntax</p>
+   <code><pre> selector {
+    color:#(0-F)(0-F)(0-F)(0-F)(0-F)(0-F);
+}</pre></code>
+           <li>HSL</li>
+            <p>Syntax</p>
+   <code><pre> selector {
+    color:hsl(H, S, L);
+}</pre></code>
+      <li>HSLA</li>
+      <p>Syntax</p>
+   <code><pre> selector{
+    color:hsla(H, S, L, A);
+}</pre></code>
+   </ul>
+</section>
+
+<section class="main-section" id="CSS_z-index_Property">
+   <header>CSS z-index Property</header>
+   <p>The z-index property is used to displace elements on the z-axis i.e in or out of the screen. It is used to define the order of elements if they overlap on each other.</p>
+   <p>Syntax</p>
+   <code><pre> z-index: auto|number|initial|inherit;</pre></code>
+   <p>Property values:</p>
+   <ul>
+      <li><b>auto:</b> The stack order is equal to that of the parent(default)</li>
+      <li><b>number:</b> The stack order depends in the number</li>
+      <li><b>initial:</b> Sets the property to its default value</li>
+      <li><b>inherit:</b> Inherits the property from the parent element</li>
+   </ul>
+</section>
+<section class="main-section" id="Reference">
+   <header>Reference</header>
+   <p>Visit <a href="https://www.geeksforgeeks.org/css-tutorial/?ref=shm"> CSS Tutorial</a> to learn more about CSS.</p>
+   </section.
+</div>
+
+      </main>
+      </body>
+      </html>
